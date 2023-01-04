@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+	
+	var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+   
+    var maxIntentos = 3;
+    var actualContador = 1;
+
+   while(actualContador <= maxIntentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada){
+            alert("Bienvenido al sistema" + inicioDeSesionIngresado);
+            actualContador = maxIntentos; // Lo hice bien, así que paso todos los intentos que falten y salgo del loop. Allá abajo aumentará +1! 
+        } else {
+            if (actualContador == 3) {
+                alert("Agotaste el número permitido de intentos!");
+            } else {
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+
+       // vaya al próximo intento 
+        actualContador = actualContador +1;  
+    }
+
+</script>
+
+    

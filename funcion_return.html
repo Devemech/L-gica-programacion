@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso, altura) {
+        return peso /(altura*altura);
+    }
+
+    nombre = prompt ("ingrese su nombre")
+    pesoInformado = prompt (nombre + " " + "informe su peso");
+    alturaInfomado = prompt (nombre + " " + "informe su altura");
+
+    imcCalculado = calcularImc (pesoInformado, alturaInfomado)
+
+    imprimir(nombre + " " + "su imc calculado es: " + imcCalculado);
+
+</script>

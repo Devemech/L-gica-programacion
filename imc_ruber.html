@@ -1,0 +1,38 @@
+<meta charted= "UTF-8">
+
+<h1>Programa calcular Imc</h1>
+
+<script>
+	function saltarLinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea
+	}
+
+	function calcularImc(peso,altura) {
+
+		// indice de masa corporal formula
+
+		imc = peso / (altura*altura);
+
+		return(imc); 
+
+	}
+
+	pesoRuber = 60
+	alturaRuber = 1.70
+	
+	//imcRuber = pesoRuber / (alturaRuber*alturaRuber)
+
+	imcRuber = calcularImc(pesoRuber,alturaRuber)
+
+	imprimir( "El indice corporal de ruber es: " + imcRuber)
+
+</script>
